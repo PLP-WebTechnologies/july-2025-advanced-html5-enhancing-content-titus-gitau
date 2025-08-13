@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        table, th, td {
+            border: 1px solid #0f0a0a;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+        fieldset {
+            border: 1px solid #555;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+        input, select, textarea {
+            padding: 10px;
+            width: 100%;
+            max-width: 500px;
+        }
+        .form-section {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My HTML5 web development Assignment</h1>
+</header>
+
+
+<section>
+    <h2>My Favorite Hobbies</h2>
+    <ul>
+        <li> Watching Movies and Series</li>
+        <li>Playing video games</li>
+        <li>Watching Football</li>
+        <li>Listening to Music</li>
+    </ul>
+</section>
+
+
+<section>
+    <h2>Weekly Course Timetable</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Course unit</th>
+                <th>Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Monday</td>
+                <td>Web development</td>
+                <td>10:00 AM - 12:00 PM</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>Python Programming</td>
+                <td>10:00 AM - 12:00 PM</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>Database development</td>
+                <td>10:00 AM - 12:00 PM</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+
+<section>
+    <h2>My Music</h2>
+    <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <h2>Sample Video</h2>
+    <video controls width="320">
+        <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <h2>sample Image</h2>
+    <img src="j6.jpg" alt="sample image" width="320" height="500">
+</section>
+
+<!--Form -->
+<section>
+    <h2>Student Registration Form</h2>
+    <form action="#" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Personal Information</legend>
+            
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required minlength="3">
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required autocomplete="email">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="07XXXXXXXX" pattern="[0-9]{10}" required autocomplete="tel">
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+
+            <label for="studentid">Student ID (Read Only):</label>
+            <input type="text" id="studentid" name="studentid" value="PLP2025-001" readonly>
+        </fieldset>
+
+        <fieldset>
+            <legend>Account Details</legend>
+            
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Choose a username" required minlength="5" autocomplete="username">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter password" required minlength="6" autocomplete="new-password">
+
+            <label for="confirm">Confirm Password:</label>
+            <input type="password" id="confirm" name="confirm" placeholder="Re-enter password" required minlength="6" autocomplete="off">
+
+            <label>
+                <input type="checkbox" name="terms" required>
+                I agree to the Terms and Conditions
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Information</legend>
+            
+            <label for="bio">Short Bio:</label>
+            <textarea id="bio" name="bio" rows="4" placeholder="Tell us something about yourself..." required></textarea>
+
+            <label for="course">Course Interested In:</label>
+            <input type="text" id="course" name="course" placeholder="Enter course name" required>
+        </fieldset>
+
+        <div class="form-section">
+            <button type="submit">Submit Details</button>
+            <button type="reset">Clear Form</button>
+        </div>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 My HTML5 enhancing content Assignment Page</p>
+</footer>
+
+</body>
+</html>
